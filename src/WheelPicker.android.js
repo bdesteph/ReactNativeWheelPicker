@@ -28,11 +28,11 @@ export default class WheelPicker extends React.Component<Props> {
     style: {
       width: 100,
       height: 150,
+      borderWidth: 1,
     },
   }
 
   onItemSelected = (event: any) => {
-    console.warn('test');
     if (this.props.onItemSelected) {
       this.props.onItemSelected(event.nativeEvent.position)
     }

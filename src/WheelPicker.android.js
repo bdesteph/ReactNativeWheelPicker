@@ -26,12 +26,13 @@ type Props = {
 export default class WheelPicker extends React.Component<Props> {
   static defaultProps = {
     style: {
-      width: 150,
+      width: 100,
       height: 150,
     },
   }
 
   onItemSelected = (event: any) => {
+    console.warn('test');
     if (this.props.onItemSelected) {
       this.props.onItemSelected(event.nativeEvent.position)
     }

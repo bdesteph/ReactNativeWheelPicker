@@ -19,7 +19,7 @@ type State = {
 export default class WheelPicker extends React.Component<Props, State> {
   static defaultProps = {
     style: {
-      width: 150,
+      width: 100,
       height: 150,
     },
   }
